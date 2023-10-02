@@ -41,7 +41,6 @@ li a {
 }
 
 .col {
-    background-color: hsl(207.57deg 100% 85.49%);
     border-radius: 2rem;
     /* debug */
     min-height: 200px;
@@ -59,6 +58,8 @@ li a {
 .flex-container {
     display: flex;
 }
+
+
 
 /* HEADER*/
 
@@ -84,16 +85,21 @@ header {
 
 /* demo section  */
 
-.demo-section .col:nth-child(1) {
-    /* debug */
-    min-height: 500px;
+.demo-section .col {
+    background-color: hsl(207.57deg 100% 85.49%);
+}
 
+.demo-section .col:nth-child(1) {
 }
 
 /* planning section  */
 
 .planning-section {
     background-color: rgb(151 146 228 );
+}
+
+.planning-section .col {
+    background-color: white;
 }
 
  /* testimonials section  */
@@ -107,7 +113,17 @@ header {
     }
 /* benefit section */
 
+.benefit-section {
+    background-color: rgb(151 146 228 );
+}
+
+.benefit-section .col {
+    background-color: white;
+}
 /* about us section */
+    .about-us-section {
+        font-size: var(--font-size);
+    }
 
 /* get started section  */
 
