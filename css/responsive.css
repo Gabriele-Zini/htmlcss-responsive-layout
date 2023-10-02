@@ -1,12 +1,17 @@
 /* BREAKPOINT TABLET 768px */
 
 @media screen and (min-width: 768px) {
+
+    /* demo section */
     .demo-section .col {
         width: calc(100% / 3 - 6rem / 3);
+        line-height: 3rem;
     }
+
 
     .demo-section div {
         justify-content: space-between;
+        
     }
 
     .demo-section .col:nth-child(1) {
@@ -17,12 +22,41 @@
         width: calc((100% / 2) - 3rem / 2);
     }
 
+    /* about us section */
+
     .about-us-section .col:first-child {
-        width:60%;
+        width:calc(60% - 8rem);
     }
 
     .about-us-section .col:nth-child(2) {
-        width: calc(40% - 3rem);
+        width:40%;
+    }
+
+    .about-us-section .col:nth-of-type(2) {
+        align-items: flex-start;
+
+    }
+
+    .about-us-section .row {
+        gap:8rem;
+    }
+
+    /* benefit */
+    .benefit-section h3 {
+        font-size: 5rem;
+    }
+
+    /* testimonials section */
+
+    .testimonials-section .col {
+        flex-direction: row;
+    }
+    .testimonials-section img {
+        margin-right: 3rem;
+    }
+
+    .testimonials-section p, h5 {
+        text-align: left;
     }
 
 }
@@ -31,7 +65,7 @@
 
 @media screen and (min-width: 992px) {
     .container {
-        width: 70%;
+        width: 85%;
         padding: 3rem 0;
     }
 
@@ -42,12 +76,17 @@
     .menu-btn {
         display: none;
     }
-
+   
+   
+   
+    /* .demo-section */
     .demo-section .col:nth-child(1) {
         flex-direction: row;
     
     }
-    
+
+
+    /* planning section */
 
     .planning-section .container {
         width: 50%;
@@ -57,13 +96,34 @@
         justify-content: space-between;
     }
 
+    .planning-section .container {
+        width: 70%;
+    }
+
     .planning-section .col {
         width: calc(50% - 3rem)
     }
 
+
+    /* benefit section */
+
     .benefit-section .col {
         width: calc((100% / 3) - 6rem / 3);
     }
-
+   
     
+     /* testimonials section  */
+    .testimonials-section h4 {
+        font-size: 2rem;
+    }
+    
+    .testimonials-section h2 {
+        font-size: 4rem;
+    }
+    
+     .testimonials-section p {
+        font-size: 2rem;
+        line-height: 3rem;
+     }
 }
+

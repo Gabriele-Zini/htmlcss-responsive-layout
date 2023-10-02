@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     /* debug */
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 
 img {
@@ -24,11 +24,14 @@ html {
 
 /* COMMON */
 
+body {font-family: 'PT Sans', sans-serif;
+}
+
 .container {
     margin: 0 auto;
     width: 100%;
     max-width: 1024px;
-    padding:3rem
+    padding:3rem;
 
 }
 
@@ -52,6 +55,16 @@ li a {
     gap: 3rem;
 }
 
+.btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    min-width: 1rem;
+    min-height: 1rem;
+    border-radius: 2rem;
+    padding: .7rem 2rem;
+
+}
 /* utilities */
 
 
@@ -59,8 +72,21 @@ li a {
     display: flex;
 }
 
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.text-align-center {
+    text-align: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
 
 
+.position-relative {
+    position: relative;
+}
 /* HEADER*/
 
 header {
@@ -81,6 +107,15 @@ header {
     font-size: var(--font-size);
 }
 
+.menu a {
+    color: white;
+    font-size: var(--font-size);
+}
+
+.menu-list {
+    gap:3rem;
+}
+
 /* MAIN */
 
 /* demo section  */
@@ -93,15 +128,17 @@ header {
     display: flex;
     justify-content: center;
     font-size: var(--font-size);
-    padding: 2rem  2rem 0 2rem;
+    padding: 5rem  2rem 0 2rem;
     }
 
 
-    .demo-section .col > div:first-of-type > * {
+.demo-section .col > div:first-of-type > * {
         margin-bottom: 2rem;
         width: 100%;
-        text-align: center;
+        line-height: 3rem;
     }
+
+  
 
 .demo-section .col:nth-child(1) {
     flex-direction: column;
@@ -115,21 +152,23 @@ header {
 }
 
 .demo-section .col div > i {
-    font-size: 7rem;
+    font-size: 8rem;
+    color: hsl(208.7deg 100% 49.61%);
+    padding-bottom: 3rem;
+}
+
+
+.demo-section h3 {
+    font-size: 2rem;
+    color: hsl(208.7deg 100% 49.61%);
 }
 
 .apple-store {
-    display: inline-block;
     background-color:hsl(208.7deg 100% 49.61%);
-    color: white;
-    text-decoration: none;
-    min-width: 1rem;
-    min-height: 1rem;
-    padding: .7rem 4rem ;
-    border-radius: 2rem;
     font-weight: bold;
-    
 }
+
+
 .apple-store i {
     font-size: 2rem;
     margin-right: 1rem;
@@ -139,35 +178,248 @@ header {
 
 .planning-section {
     background-color: rgb(151 146 228 );
+    padding: 5rem 0;
+}
+
+.planning-section h2 {
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+.planning-section p {
+    font-size: var(--font-size);
+    margin-top: 3rem;
 }
 
 .planning-section .col {
-    background-color: white;
+    font-size: var(--font-size);
 }
 
+.planning-section .col:nth-child(1) {
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    line-height: 4rem;
+    font-style: italic;
+   
+}
+
+.planning-section .col:nth-child(2) {
+    background-color: white;
+    text-align: center;
+    padding: 3rem;
+    line-height: 4rem;
+    font-style: italic;
+   
+}
+
+.fa-arrow-down-long {
+    display: inline-block;
+    background-color: #9792e4;
+    color: black;
+    height:4rem;
+    width:4rem;
+    border-radius: 50%;
+    padding-top: 1.2rem;
+    margin-top: 4rem;
+
+}
+
+.planning-section a {
+    align-items: center;
+
+} 
+   
+
+
+
+
+
  /* testimonials section  */
-    .testimonials-section .col{
+    .testimonials-section .col {
         background-color: rgb(151 146 228 );
+        color: white;
+        width: 100%;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .testimonials-section img {
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
 
     }
 
-    .testimonials-section .col:nth-child(1) {
-        background-color: white;
+  
+
+
+    .testimonials-section div:first-of-type {
+        line-height: 2.5rem;
+        text-align: center;
+        font-size: var(--font-size);
+
     }
+
+    .testimonials-section h5 {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+
+
+    .testimonials-section h4 {
+        font-size: 1.8rem;
+        margin-top: 4rem;
+    }
+
+    .testimonials-section h2 {
+        color:rgb(151 146 228 );
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin: 3rem 0;
+        line-height: 4rem;
+    }
+
+    .testimonials-section p {
+        font-size: var(--font-size);
+        width: 100%;
+        margin-top: 2rem;
+        
+    }
+
+    .testimonials-section .row:last-child {
+        margin-bottom:5rem;
+    }
+
+
+
 /* benefit section */
 
 .benefit-section {
+    padding-top: 5rem;
     background-color: rgb(151 146 228 );
 }
 
 .benefit-section .col {
     background-color: white;
+    padding: 3rem;
+    align-items: flex-start;
 }
+
+.benefit-section h3 {
+    color: white;
+    font-size: 3rem;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.benefit-section h5 {
+    font-size: 5rem;
+    margin-top: 3rem;
+    color: rgb(151 146 228 );
+    text-align: left;
+}
+
+
+.benefit-section h4 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    color: rgb(151 146 228 );
+    text-align: left;
+}
+
+.benefit-section p {
+    font-size: var(--font-size);
+    margin-top: 3rem;
+    color: rgb(55, 52, 52);
+    text-align: left;
+    line-height: 3rem;
+}
+
 /* about us section */
     .about-us-section {
         font-size: var(--font-size);
     }
 
+
+    .more {
+       background-color: hsl(243.66deg 60.29% 73.33%);
+       color: white;
+       width:2rem;
+       font-size: 1.5rem;
+       width: min-content;
+       padding:.3rem 3rem;
+       margin-top: 3rem;
+       text-decoration: none;
+       border-radius: 2rem;
+       display: inline-block;
+       
+    }
 /* get started section  */
 
+.about-us-section  {
+    margin-top: 5rem;
+}
+
+
+.about-us-section h3 {
+    font-size: 4rem;
+    color: rgb(151 146 228 );
+}
+
+
+.linkedin-btn {
+    font-size: 1.5rem;
+    width:minS-content;
+    padding:.8rem 3rem;
+    margin-top: 3rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    display: inline-block;
+    background-color: rgb(151 146 228 );
+    color: white;
+
+}
+
+.about-us-section img {
+    border-radius: 50%;
+}
+
+.about-us-section h6{
+    color: rgb(151 146 228 );
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.about-us-section .fa-quote-left {
+    color: rgb(151 146 228 );
+    font-size: 6rem;
+    position: absolute;
+    right: 3rem;
+
+}
+
+.about-us-section p {
+    line-height: 3rem;
+    margin-top: 3rem;
+}
+
+.about-us-section p:last-of-type{
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+
+
+/* get-started section  */
+.get-started {
+    background-color: hsl(243.66deg 60.29% 73.33%);
+    color: white;
+}
 /* FOOTER */
+
+footer {
+    background-color: hsl(0deg 0% 20%);
+    /* debug */
+    min-height: 20rem;
+}
