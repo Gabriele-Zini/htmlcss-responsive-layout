@@ -40,6 +40,18 @@ li a {
     text-decoration: none;
 }
 
+.col {
+    background-color: hsl(207.57deg 100% 85.49%);
+    border-radius: 2rem;
+    /* debug */
+    min-height: 200px;
+    width: 100%;
+}
+
+.row {
+    flex-wrap: wrap;
+    gap: 3rem;
+}
 
 /* utilities */
 
@@ -69,5 +81,34 @@ header {
 }
 
 /* MAIN */
+
+/* demo section  */
+
+.demo-section .col:nth-child(1) {
+    /* debug */
+    min-height: 500px;
+
+}
+
+/* planning section  */
+
+.planning-section {
+    background-color: rgb(151 146 228 );
+}
+
+ /* testimonials section  */
+    .testimonials-section .col{
+        background-color: rgb(151 146 228 );
+
+    }
+
+    .testimonials-section .col:nth-child(1) {
+        background-color: white;
+    }
+/* benefit section */
+
+/* about us section */
+
+/* get started section  */
 
 /* FOOTER */
