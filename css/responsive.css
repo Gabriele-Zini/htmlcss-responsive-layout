@@ -17,6 +17,14 @@
         width: calc((100% / 2) - 3rem / 2);
     }
 
+    .about-us-section .col:first-child {
+        width:60%;
+    }
+
+    .about-us-section .col:nth-child(2) {
+        width: calc(40% - 3rem);
+    }
+
 }
 
 /* BREAKPOINT DESKTOP 992px */
@@ -29,6 +37,19 @@
 
     .menu {
         display: block;
+    }
+
+    .planning-section .container {
+        width: 50%;
+    }
+
+    .planning-section .row {
+        justify-content: space-between;
+    }
+
+    .planning-section .col {
+        width: calc(50% - 3rem)
+
     }
     
 }
