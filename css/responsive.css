@@ -39,6 +39,16 @@
         display: block;
     }
 
+    .menu-btn {
+        display: none;
+    }
+
+    .demo-section .col:nth-child(1) {
+        flex-direction: row;
+    
+    }
+    
+
     .planning-section .container {
         width: 50%;
     }
@@ -49,11 +59,11 @@
 
     .planning-section .col {
         width: calc(50% - 3rem)
-
     }
 
     .benefit-section .col {
         width: calc((100% / 3) - 6rem / 3);
     }
+
     
 }

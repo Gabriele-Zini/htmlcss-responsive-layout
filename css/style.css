@@ -85,11 +85,54 @@ header {
 
 /* demo section  */
 
+
+
 .demo-section .col {
     background-color: hsl(207.57deg 100% 85.49%);
-}
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size);
+    padding: 2rem  2rem 0 2rem;
+    }
+
+
+    .demo-section .col > div:first-of-type > * {
+        margin-bottom: 2rem;
+        width: 100%;
+        text-align: center;
+    }
 
 .demo-section .col:nth-child(1) {
+    flex-direction: column;
+
+}
+
+.demo-section .col:nth-child(1) img {
+    margin-top: 2rem;
+    /* debug */
+    width: 200px;
+}
+
+.demo-section .col div > i {
+    font-size: 7rem;
+}
+
+.apple-store {
+    display: inline-block;
+    background-color:hsl(208.7deg 100% 49.61%);
+    color: white;
+    text-decoration: none;
+    min-width: 1rem;
+    min-height: 1rem;
+    padding: .7rem 4rem ;
+    border-radius: 2rem;
+    font-weight: bold;
+    
+}
+.apple-store i {
+    font-size: 2rem;
+    margin-right: 1rem;
 }
 
 /* planning section  */
