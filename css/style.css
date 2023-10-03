@@ -474,6 +474,7 @@ header {
 .get-started li:first-of-type {
     color: #b5b1ef;
     font-size: 2.5rem;
+    margin-top: 3rem;
 }
 
 .get-started li:nth-of-type(2) {
