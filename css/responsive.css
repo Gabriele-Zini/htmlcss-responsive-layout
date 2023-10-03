@@ -50,6 +50,7 @@
 
     .testimonials-section .col {
         flex-direction: row;
+        
     }
     .testimonials-section img {
         margin-right: 3rem;

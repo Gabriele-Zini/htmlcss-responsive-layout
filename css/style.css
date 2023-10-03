@@ -42,9 +42,7 @@ ul li{
     list-style-type: none;
 }
 
-li a {
-    text-decoration: none;
-}
+
 
 .col {
     border-radius: 2rem;
@@ -60,13 +58,10 @@ li a {
 
 .btn {
     display: inline-block;
-    color: white;
     text-decoration: none;
     min-width: 1rem;
     min-height: 1rem;
     border-radius: 2rem;
-    padding: .7rem 2rem;
-
 }
 /* utilities */
 
@@ -118,11 +113,20 @@ header {
 
 .menu a {
     color: white;
-    font-size: var(--font-size);
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 .menu-list {
     gap:3rem;
+    align-items: center;
+}
+
+.menu-list li:nth-child(5) a{
+    background-color: white;
+    color: black;
+    padding: .8rem 3rem;
+    
 }
 
 .hamburger-menu {
@@ -204,13 +208,15 @@ header {
     color: hsl(208.7deg 100% 49.61%);
 }
 
-.apple-store {
+.app-store {
     background-color:hsl(208.7deg 100% 49.61%);
     font-weight: bold;
+    color: white;
+    padding: .5rem 5rem;
 }
 
 
-.apple-store i {
+.app-store i {
     font-size: 2rem;
     margin-right: 1rem;
 }
@@ -284,11 +290,13 @@ header {
         padding: 3rem;
     }
 
+ 
+
     .testimonials-section img {
         border-radius: 50%;
-        width: 20rem;
-        height: 20rem;
-
+        width: 200px;
+        height:200px ;
+        object-fit: cover;
     }
 
   
@@ -457,10 +465,82 @@ header {
     background-color: hsl(243.66deg 60.29% 73.33%);
     color: white;
 }
+
+
+.get-started li {
+    margin-bottom: 4rem;
+}
+
+.get-started li:first-of-type {
+    color: #b5b1ef;
+    font-size: 2.5rem;
+}
+
+.get-started li:nth-of-type(2) {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.get-started li:nth-of-type(3) {
+    font-size: 6rem;
+    color: #fdc15f;
+}
+
+.get-started li:nth-of-type(4) {
+    font-size: 2rem;
+}
+
+
+
+.get-started li:nth-of-type(5) {
+    background-color: white;
+    font-size: 2.5rem;
+    padding: 2rem 6rem;
+    color: #b5b1ef;
+    border-radius: 5rem;
+}
+
+.get-started li:nth-of-type(5) a {
+    text-decoration: none;
+}
+
+.get-started li:nth-of-type(6) {
+    font-size: 2rem;
+}
+
+.get-started li:nth-of-type(6) a {
+    color: white;
+}
+
+.fa-circle {
+    font-size: .5rem;
+    margin: 0 .6rem;
+    position: relative;
+    bottom:.5rem;
+}
+
+
 /* FOOTER */
 
 footer {
     background-color: hsl(0deg 0% 20%);
     /* debug */
     min-height: 20rem;
+    color: white;
+    font-size: var(--font-size);
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer div:first-child {
+    padding: 2rem 0 5rem;
+}
+
+
+footer a {
+    color: rgb(44, 133, 162);
 }
