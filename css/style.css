@@ -183,17 +183,19 @@ header {
         line-height: 3rem;
     }
 
+
+
   
 
 .demo-section .col:nth-child(1) {
     flex-direction: column;
-
 }
 
 .demo-section .col:nth-child(1) img {
-    margin-top: 2rem;
+    display: block;
+    margin: 4rem auto 0;
     /* debug */
-    width: 200px;
+    width: 300px;
 }
 
 .demo-section .col div > i {
