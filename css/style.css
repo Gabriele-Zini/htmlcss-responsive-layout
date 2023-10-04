@@ -218,6 +218,12 @@ header {
     letter-spacing: .5rem;
 }
 
+@media screen and (max-width:320px) {
+    .app-store {
+        letter-spacing: .2rem;
+    }
+}
+
 
 .app-store i {
     font-size: 2rem;
